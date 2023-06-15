@@ -39,73 +39,73 @@ h1 {
 /* Similar thing excep pseudo classes, putting a coma between them means both of them individually get the same stuff */
 .faq.active::before,
 .faq-active::after {
-    content: '\f075';
-    font-family: 'Font Awesome 5 Free';
-    color: #2ecc71;
-    font-size: 7rem;
-    position: absolute;
-    opacity: 0.2;
-    top: 20px;
-    left: 20px;
-    z-index: 0;
+  content: "\f075";
+  font-family: "Font Awesome 5 Free";
+  color: #2ecc71;
+  font-size: 7rem;
+  position: absolute;
+  opacity: 0.2;
+  top: 20px;
+  left: 20px;
+  z-index: 0;
 }
 
 .faq.active::after {
-    color: #3498db;
-    top: -10px;
-    left: -30px;
-    transform: rotateY(180deg);
+  color: #3498db;
+  top: -10px;
+  left: -30px;
+  transform: rotateY(180deg);
 }
 
 .faq-title {
-    margin: 0 35px 0 0;
+  margin: 0 35px 0 0;
 }
 
 .faq-text {
-    display: none;
-    margin: 30px 0 0;
+  display: none;
+  margin: 30px 0 0;
 }
 
 /* Anything that has a .faq-text class which is a descendant of an element with the .faq.active class (has .faq and .active) */
 /* Show the text only when it is active */
 .faq.active .faq-text {
-    display: block;
+  display: block;
 }
 
 .faq-toggle {
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    padding: 0;
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  padding: 0;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
 }
 
 .faq-toggle:focus {
-    outline: 0
+  outline: 0;
 }
 
 .faq-toggle .fa-times {
-    display: none;
+  display: none;
 }
 
 .faq.active .faq-toggle .fa-times {
-    display: block;
-    color: white;
+  display: block;
+  color: white;
 }
 
 .faq.active .faq-toggle .fa-chevron-down {
-    display: none;
+  display: none;
 }
 
 .faq.active .faq-toggle {
-    background-color: #9fa4a8;
+  background-color: #9fa4a8;
 }
